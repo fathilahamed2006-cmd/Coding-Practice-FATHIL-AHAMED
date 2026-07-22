@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int a[10][10],b[10][10],c[20][20];
+    int r,c1,i,j;
+
+    printf("Enter the elements:");
+    scanf("%d%d",&r,&c1);
+
+    for(i=0;i<r;i++)
+        for(j=0;j<c1;j++)
+        scanf("%d",&a[i][j]);
+    for(i=0;i<r;i++)
+        for(j=0;j<c1;j++)
+        scanf("%d",&b[i][j]);
+
+    for(i=0;i<r;i++)
+        for(j=0;j<c1;j++)
+    c[i][j]=a[i][j]+b[i][j];
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c1;j++)
+    printf("%d ",c[i][j]);
+    printf("\n");
+    }
+}
